@@ -15,7 +15,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         else:
             name = req_body.get('name')
 
-    conn = pyodbc.connect('Driver={ODBC Driver 13 for SQL Server};Server=tcp:dblearning.database.windows.net,1433;Database=DbLearning;Uid=flaviodiasps@dblearning;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
+    conn = pyodbc.connect('Driver={ODBC Driver 13 for SQL Server};Server=tcp:dblearning.database.windows.net,1433;Database=DbLearning;Uid=flaviodiasps@dblearning;Pwd=Flavio973119;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
     cursor = conn.cursor()
 
     cursor.execute("insert into RandomNumbers values(1, 1, 1, 1)")
