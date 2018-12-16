@@ -6,7 +6,7 @@
       "name": "event",
       "direction": "in",
       "eventHubName": "numberevent",
-      "connection": "Endpoint=sb://eh-flaviodiasps.servicebus.windows.net/;SharedAccessKeyName=MyPolicy;SharedAccessKey=wLO9LjInyY/xHE/zABQUIAOEnrsgr9xOPDMOOeAbox4=;EntityPath=numberevent",
+      "connection": "EventHubConnectionString",
       "cardinality": "many",
       "consumerGroup": "$Default"
     }
