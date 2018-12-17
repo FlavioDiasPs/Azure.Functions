@@ -6,10 +6,10 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    conn = pyodbc.connect('Driver={ODBC Driver 13 for SQL Server};Server=tcp:dblearning.database.windows.net,1433;Database=DbLearning;Uid=flaviodiasps@dblearning;Pwd=Flavio973119;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
+    conn = pyodbc.connect('CONNETION STROIGN')
     cursor = conn.cursor()    
 
-    cursor.execute("insert into RandomNumbers values(1, 1, 1, 1)")
+    cursor.execute("insert into <TABLE> values(1, 1, 1, 1)")
     conn.commit()
 
     name = req.params.get('name')
