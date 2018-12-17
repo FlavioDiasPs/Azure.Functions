@@ -1,5 +1,5 @@
 import logging
-import pyodbc
+import pyodbc as pyodbc
 import azure.functions as func
 
 
